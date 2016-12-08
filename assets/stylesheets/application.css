@@ -49,39 +49,6 @@ a:visited {
   opacity: 0.5;
 }
 
-
-@media screen and (max-width: 1000px) {
-
-  .item {
-    width: 33.33%;
-  }
-
-}
-
-@media screen and (max-width: 800px) {
-
-  .item {
-    width: 50%;
-  }
-
-  .logo {
-    width: 8%;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-
-  .item {
-    width: 100%;
-  }
-
-  .logo {
-    width: 12%;
-  }
-
-}
-
 /* MENU */
 
 .sidebar {
@@ -141,4 +108,47 @@ label {
 
     -moz-transition: left 0.5s ease;
     transition: left 0.5s ease;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .item {
+    width: 33.33%;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .item {
+    width: 50%;
+  }
+
+  .logo {
+    width: 8%;
+  }
+
+  .sidebar h1 {
+    font-size: 1em;
+  }
+
+  .sidebar p {
+    margin-top: 10%;
+    font-size: 0.75em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .item {
+    width: 100%;
+  }
+
+  .logo {
+    width: 12%;
+  }
+
 }
