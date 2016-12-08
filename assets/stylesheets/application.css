@@ -1,14 +1,19 @@
+/* GRID */
+
 body {
   width: 100%;
+  font-family: 'Avenir Next';
 }
 
 img {
   width: 100%;
+  z-index: -1000;
 }
 
 .logo {
-  width: 6%;
   position: fixed;
+  z-index: 10;
+  width: 6%;
   margin: 1%;
 }
 
@@ -16,12 +21,14 @@ img {
     float: left;
     width: 33.33%;
     margin-top: -3px;
+    z-index: -1000;
 }
 
 .image{
     max-width: 100%;
     margin: 0;
     display: block;
+    z-index: -1000;
 }
 
 .image:after {
@@ -30,9 +37,15 @@ img {
 
 a {
   transition: opacity 0.5s ease;
+  text-decoration: underline;
+  color: black;
 }
 
-a:hover {
+a:visited {
+  color: red;
+}
+
+.site:hover {
   opacity: 0.5;
 }
 
@@ -40,32 +53,92 @@ a:hover {
 @media screen and (max-width: 1000px) {
 
   .item {
-    width: 50%;
+    width: 33.33%;
   }
 
 }
 
-@media screen and (max-width: 700px) {
-  /* 10 columns for larger screens */
+@media screen and (max-width: 800px) {
 
   .item {
     width: 50%;
   }
 
   .logo {
-    width: 10%;
+    width: 8%;
   }
 
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 600px) {
 
   .item {
     width: 100%;
   }
 
   .logo {
-    width: 14%;
+    width: 12%;
   }
 
+}
+
+/* MENU */
+
+.sidebar {
+    background-color: white;
+    width: 33.33%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar h1 {
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 2%;
+    position: fixed;
+}
+
+.sidebar p {
+    color: black;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-top: 9%;
+    line-height: 1.2em;
+    width: 29.33%;
+    position: fixed;
+}
+
+.portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+input[type=checkbox] {
+   display: none;
+}
+
+input:checked ~ .portfolio {
+    left: 33.33%;
+}
+
+input:checked ~ label {
+    left: 33.33%;
+}
+
+label {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
 }
