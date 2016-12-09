@@ -22,6 +22,7 @@ img {
     width: 33.33%;
     margin-top: -3px;
     z-index: -1000;
+    background-color: white;
 }
 
 .image{
@@ -120,6 +121,14 @@ label {
 
 }
 
+@media screen and (max-width: 900px) {
+
+  .sidebar p {
+    margin-top: 10%;
+  }
+
+}
+
 @media screen and (max-width: 850px) {
 
   .item {
@@ -135,8 +144,12 @@ label {
   }
 
   .sidebar p {
-    margin-top: 10%;
+    margin-top: 8%;
     font-size: 0.75em;
+  }
+
+  #extra {
+    display: none;
   }
 
 }
